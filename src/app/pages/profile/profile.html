@@ -1,0 +1,122 @@
+<div class="github-sidebar" *ngIf="!loading">
+
+  <div class="avatar-wrapper">
+    <img class="avatar" [src]="user.avatar_url" />
+
+    <button class="status-badge" aria-label="Set status">
+      <svg viewBox="0 0 16 16" width="16" height="16">
+        <path
+          fill="currentColor"
+          d="M8 1a.75.75 0 01.75.75V7.25H14.25a.75.75 0 010 1.5H8.75V14.25a.75.75 0 01-1.5 0V8.75H1.75a.75.75 0 010-1.5H7.25V1.75A.75.75 0 018 1z"
+        />
+      </svg>
+    </button>
+  </div>
+
+  <h1 class="name">{{ user.name }}</h1>
+  <h2 class="username">{{ user.login }}</h2>
+
+  <p class="bio">{{ user.bio }}</p>
+
+  <button class="edit-profile">Edit profile</button>
+
+  <div class="followers">
+    <svg viewBox="0 0 16 16" width="16" height="16">
+      <path fill="currentColor"
+        d="M5.5 3.5a2 2 0 100 4 2 2 0 000-4zm5 0a2 2 0 100 4 2 2 0 000-4zM2 12.25c0-1.75 2.5-2.75 3.5-2.75s3.5 1 3.5 2.75V14H2v-1.75zm7 0c0-.69-.25-1.3-.67-1.82.85-.24 2.67.58 2.67 1.82V14H9v-1.75z" />
+    </svg>
+    <strong>{{ user.followers }}</strong> followers ·
+    <strong>{{ user.following }}</strong> following
+  </div>
+
+  <ul class="details">
+
+    <li *ngIf="user.company">
+      <span class="icon svg-icon">
+        <svg viewBox="0 0 16 16" width="16" height="16">
+          <path fill="currentColor"
+            d="M1.75 1.5h12.5c.414 0 .75.336.75.75v11.5a.75.75 0 01-.75.75H1.75a.75.75 0 01-.75-.75V2.25c0-.414.336-.75.75-.75zM3 3v10h10V3H3zm2 2h2v2H5V5zm0 3h2v2H5V8zm4-3h2v2H9V5zm0 3h2v2H9V8z" />
+        </svg>
+      </span>
+      <span class="text">{{ user.company }}</span>
+    </li>
+
+    <li *ngIf="user.location">
+      <span class="icon svg-icon">
+        <svg viewBox="0 0 16 16" width="16" height="16">
+          <path fill="currentColor"
+            d="M8 0a5 5 0 00-5 5c0 3.75 5 11 5 11s5-7.25 5-11a5 5 0 00-5-5zm0 7a2 2 0 110-4 2 2 0 010 4z" />
+        </svg>
+      </span>
+      <span class="text">{{ user.location }}</span>
+    </li>
+
+    <li>
+      <span class="icon svg-icon">
+        <svg viewBox="0 0 16 16" width="16" height="16">
+          <path fill="currentColor"
+            d="M1.75 3A.75.75 0 001 3.75v8.5c0 .414.336.75.75.75h12.5a.75.75 0 00.75-.75v-8.5a.75.75 0 00-.75-.75H1.75zm.75 1.5l5.5 3.75L13.5 4.5v7H2.5v-7z" />
+        </svg>
+      </span>
+      <span class="text">kushwaha.shreeram@gmail.com</span>
+    </li>
+
+    <li *ngIf="user.blog">
+      <span class="icon svg-icon">
+        <svg viewBox="0 0 16 16" width="16" height="16">
+          <path fill="currentColor"
+            d="M7.775 3.275a.75.75 0 011.06 0l3.89 3.89a.75.75 0 010 1.06l-3.89 3.89a.75.75 0 01-1.06-1.06L10.94 8 7.775 4.835a.75.75 0 010-1.06z" />
+        </svg>
+      </span>
+      <a [href]="user.blog" target="_blank">{{ user.blog }}</a>
+    </li>
+
+    <li>
+      <span class="icon svg-icon">
+        <svg viewBox="0 0 24 24" width="16" height="16">
+          <path fill="currentColor"
+            d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.6 0 4.266 2.368 4.266 5.455v6.286zM5.337 7.433a2.062 2.062 0 110-4.124 2.062 2.062 0 010 4.124zM6.813 20.452H3.861V9h2.952v11.452z" />
+        </svg>
+      </span>
+      <a href="https://linkedin.com/in/shreeramkushwaha" target="_blank">
+        in/shreeramkushwaha
+      </a>
+    </li>
+
+    <li>
+      <span class="icon svg-icon">
+        <svg viewBox="0 0 24 24" width="16" height="16">
+          <path fill="currentColor"
+            d="M18.9 2H22l-6.8 7.8L23 22h-6.6l-5.2-6.8L5.3 22H2l7.2-8.3L1 2h6.7l4.7 6.1L18.9 2z" />
+        </svg>
+      </span>
+      <span class="text">@pom_fret</span>
+    </li>
+
+  </ul>
+
+  <div class="section">
+    <h3>Achievements</h3>
+    <div class="badges">
+      <div class="badge">
+        <img src="https://github.githubassets.com/images/modules/profile/achievements/pull-shark-default.png" />
+      </div>
+      <div class="badge">
+        <img src="https://github.githubassets.com/images/modules/profile/achievements/yolo-default.png" />
+      </div>
+      <div class="badge">
+        <img src="https://github.githubassets.com/images/modules/profile/achievements/starstruck-default.png" />
+        <span class="badge-count">×4</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h3>Organizations</h3>
+    <div class="orgs">
+      <img class="org-avatar" src="https://avatars.githubusercontent.com/u/12453?s=64" />
+      <img class="org-avatar" src="https://avatars.githubusercontent.com/u/69631?s=64" />
+    </div>
+  </div>
+
+</div>

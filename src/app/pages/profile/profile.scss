@@ -1,0 +1,192 @@
+$achievement-size: 70px;
+$gh-blue: #0969da;
+
+.github-sidebar {
+  width: 296px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Helvetica, Arial, sans-serif;
+  color: #24292f;
+
+  max-height: 100vh;
+  overflow-y: auto;
+  padding-right: 16px;
+}
+
+.avatar-wrapper {
+  position: relative;
+  width: 160px;
+  margin-bottom: 16px;
+}
+
+.name {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.username {
+  font-size: 20px;
+  font-weight: 300;
+  color: #57606a;
+  margin-bottom: 13px;
+}
+
+.bio {
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.edit-profile {
+  width: 100%;
+  padding: 6px 0;
+  border: 1px solid #d0d7de;
+  background: #f6f8fa;
+  border-radius: 6px;
+  margin-bottom: 12px;
+  margin-top: -10px;
+  cursor: pointer;
+}
+
+.edit-profile:hover {
+  background: #eaeef2;
+}
+
+.followers {
+  font-size: 14px;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.details {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 16px;
+
+  li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    margin-bottom: 7px;
+
+    .icon,
+    svg {
+      color: #57606a;
+      transition: color 0.15s ease;
+    }
+
+    .text,
+    a {
+      transition: color 0.15s ease;
+      color: #24292f;
+      text-decoration: none;
+    }
+
+    &:hover {
+      .icon,
+      svg,
+      .text,
+      a {
+        color: $gh-blue;
+      }
+
+      a {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.section {
+  margin-top: 24px;
+
+  h3 {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 3px;
+  }
+}
+
+.badges {
+  display: flex;
+  gap: 7px;
+}
+
+.badge {
+  position: relative;
+  width: $achievement-size;
+  height: $achievement-size;
+  margin-bottom: -10px;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.badge-count {
+  position: absolute;
+  bottom: -4px;
+  right: -4px;
+
+  background: #f1e05a;
+  color: #24292f;
+
+  font-size: 10px;
+  font-weight: 600;
+  padding: 1px 5px;
+  border-radius: 999px;
+  border: 1px solid #d0d7de;
+}
+
+.orgs {
+  display: flex;
+  gap: 8px;
+}
+
+.org-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+}
+
+.avatar-wrapper {
+  position: relative;
+  width: 220px;
+  height: 220px;
+}
+
+.avatar {
+  width: 250px;
+  height: 235px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.status-badge {
+  position: absolute;
+  bottom: -4px;
+  right: -4px;
+
+  width: 32px;
+  height: 32px;
+
+  background: #fff;
+  border: 1px solid #d0d7de;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #57606a;
+  cursor: pointer;
+
+  box-shadow: 0 1px 0 rgba(27, 31, 36, 0.04);
+}
+
+.status-badge:hover {
+  background: #f6f8fa;
+}

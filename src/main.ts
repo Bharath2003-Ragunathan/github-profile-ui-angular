@@ -1,7 +1,12 @@
-import { platformBrowser } from '@angular/platform-browser';
-import { AppModule } from './app/app-module';
+import { bootstrapApplication } from '@angular/platform-browser';
+import { provideHttpClient } from '@angular/common/http';
+import { provideEchartsCore } from 'ngx-echarts';
+import * as echarts from 'echarts';
+import { App } from './app/app';
 
-platformBrowser().bootstrapModule(AppModule, {
-  
-})
-  .catch(err => console.error(err));
+bootstrapApplication(App, {
+  providers: [
+    provideHttpClient(),
+    provideEchartsCore({ echarts })
+  ]
+}).catch(err => console.error(err));

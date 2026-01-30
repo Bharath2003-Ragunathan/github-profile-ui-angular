@@ -1,0 +1,536 @@
+.contribution-wrapper {
+  display: flex;
+  gap: 24px;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI,
+    Helvetica, Arial, sans-serif;
+}
+
+.contribution-card {
+  flex: 1;
+  border: 1px solid #d0d7de;
+  border-radius: 6px;
+  padding: 16px;
+  background: #fff;
+}
+
+.overview {
+  display: flex;
+  gap: 12px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #d0d7de;
+  margin-bottom: 12px;
+}
+
+.avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+
+.overview-info h2 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.overview-metrics {
+  display: flex;
+  gap: 24px;
+  font-size: 12px;
+  color: #57606a;
+}
+
+.overview-metrics strong {
+  display: block;
+  font-size: 14px;
+  color: #24292f;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.settings {
+  font-size: 13px;
+  color: #57606a;
+}
+
+.graph-row {
+  display: flex;
+  margin-top: 12px;
+}
+
+.day-labels {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 128px;
+  margin-right: 10px;
+  padding-top: 18px;
+  font-size: 12px;
+  color: #57606a;
+}
+
+.heatmap {
+  flex: 1;
+  height: 170px;
+}
+
+.graph-footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  margin-top: 8px;
+  color: #57606a;
+}
+
+.learn-link {
+  color: #0969da;
+  cursor: pointer;
+}
+
+.legend {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.box {
+  width: 12px;
+  height: 12px;
+  border-radius: 2px;
+}
+
+.level-0 { background: #ebedf0; }
+.level-1 { background: #9be9a8; }
+.level-2 { background: #40c463; }
+.level-3 { background: #30a14e; }
+.level-4 { background: #216e39; }
+
+.activity-row {
+  display: grid;
+  grid-template-columns: 1fr 220px;
+  gap: 24px;
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid #d0d7de;
+}
+
+.activity-left h4 {
+  margin: 0 0 6px;
+  font-size: 14px;
+}
+
+.activity-left p {
+  font-size: 13px;
+  color: #57606a;
+}
+
+.cross-graph {
+  position: relative;
+  width: 180px;
+  height: 180px;
+  color: #57606a;
+}
+
+.axis {
+  position: absolute;
+  background: #d0d7de;
+}
+
+.axis.vertical {
+  width: 2px;
+  height: 100%;
+  left: 50%;
+}
+
+.axis.horizontal {
+  height: 2px;
+  width: 100%;
+  top: 50%;
+}
+
+.indicator {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #2da44e;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.label {
+  position: absolute;
+  font-size: 12px;
+}
+
+.label.top { top: -18px; left: 50%; transform: translateX(-50%); }
+.label.right { right: -36px; top: 50%; transform: translateY(-50%); }
+.label.bottom { bottom: -36px; left: 50%; transform: translateX(-50%); text-align: center; }
+.label.left { left: -42px; top: 50%; transform: translateY(-50%); text-align: right; }
+
+.year-panel {
+  width: 80px;
+  max-height: 100%;
+  overflow-y: auto;
+}
+
+.year-panel button {
+  display: block;
+  width: 100%;
+  border: none;
+  background: transparent;
+  padding: 6px 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  text-align: center;
+}
+
+.year-panel button.active {
+  background: #0969da;
+  color: #fff;
+}
+
+.activity-box {
+  border: 1px solid #d0d7de;
+  border-radius: 6px;
+  margin-top: 16px;
+  background: #fff;
+}
+
+.activity-inner {
+  display: grid;
+  grid-template-columns: 1fr 1px 260px;
+  gap: 24px;
+  padding: 20px;
+  align-items: center;
+}
+
+.activity-divider {
+  width: 1px;
+  height: 100%;
+  margin-left: -20px;
+  background: #d0d7de;
+}
+
+.activity-title {
+  margin: 0 0 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #0969da;
+}
+
+.activity-text {
+  font-size: 13px;
+  color: #57606a;
+}
+
+.activity-text a {
+  color: #0969da;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.activity-text a:hover {
+  text-decoration: underline;
+}
+
+.activity-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cross-graph {
+  position: relative;
+  width: 220px;
+  height: 160px;
+}
+
+.axis {
+  position: absolute;
+  background: #2da44e;
+}
+
+.axis.horizontal {
+  height: 4px;
+  width: 100%;
+  top: 50%;
+}
+
+.axis.vertical {
+  width: 2px;
+  height: 100%;
+  left: 50%;
+}
+
+.dot {
+  position: absolute;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.dot.filled {
+  width: 8px;
+  height: 8px;
+  background: #2da44e;
+  top: 50%;
+  left: 32%;
+}
+
+.dot.hollow {
+  width: 10px;
+  height: 10px;
+  border: 2px solid #2da44e;
+  background: #fff;
+  top: 50%;
+  left: 50%;
+}
+
+.label {
+  position: absolute;
+  font-size: 12px;
+  color: #57606a;
+}
+
+.label.top {
+  top: -18px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.label.right {
+  right: -36px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.label.left {
+  left: -54px;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: right;
+}
+
+.label.bottom {
+  bottom: -32px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.activity-timeline {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif;
+  margin-top: 28px;
+}
+
+.timeline-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #24292f;
+}
+
+.timeline-card {
+  border-top: 1px solid #d0d7de;
+  padding-top: 16px;
+}
+
+.month-title {
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 14px;
+  color: #57606a;
+}
+
+.timeline-row {
+  display: grid;
+  grid-template-columns: 28px 1fr;
+  gap: 12px;
+  position: relative;
+  padding-bottom: 18px;
+}
+
+.timeline-row::before {
+  content: "";
+  position: absolute;
+  left: 13px;
+  top: 24px;
+  bottom: 0;
+  width: 2px;
+  background: #d0d7de;
+}
+
+.timeline-row:last-child::before {
+  display: none;
+}
+
+.timeline-icon {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 1px solid #d0d7de;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+}
+
+.timeline-icon svg {
+  width: 14px;
+  height: 14px;
+  fill: #57606a;
+}
+
+.timeline-content {
+  font-size: 14px;
+  color: #24292f;
+}
+
+.main-text {
+  margin-bottom: 8px;
+}
+
+.repo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.repo-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  color: #57606a;
+  margin-bottom: 4px;
+}
+
+.badges {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.badge {
+  font-size: 11px;
+  padding: 2px 6px;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+.badge.purple {
+  background: #8250df;
+  color: #fff;
+}
+
+.badge.green {
+  background: #2da44e;
+  color: #fff;
+}
+
+.status {
+  font-size: 12px;
+}
+
+.status.merged {
+  color: #8250df;
+}
+
+.status.open {
+  color: #2da44e;
+}
+
+.show-more {
+  width: 100%;
+  margin-top: 14px;
+  padding: 7px 12px;
+  background: #f6f8fa;
+  border: 1px solid #d0d7de;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  color: #0969da;
+  margin-bottom: 10px;
+}
+
+.show-more:hover {
+  background: #eef1f4;
+}
+
+.profile-footer {
+  margin-top: 42px;
+  padding-top: 20px;
+  border-top: 1px solid #d0d7de;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif;
+}
+
+.footer-guide {
+  text-align: center;
+  font-size: 13px;
+  color: #57606a;
+  margin-bottom: 18px;
+}
+
+.footer-guide a {
+  color: #0969da;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer-guide a:hover {
+  text-decoration: underline;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14px;
+  font-size: 12px;
+  color: #57606a;
+  margin-bottom: 40px;
+}
+
+.footer-links .left {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.footer-links svg {
+  fill: #57606a;
+}
+
+.footer-links .right {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.footer-links a {
+  color: #57606a;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.footer-links a:hover {
+  color: #0969da;
+  text-decoration: underline;
+}
+
+.footer-links .danger {
+  color: #cf222e;
+  font-weight: 500;
+}

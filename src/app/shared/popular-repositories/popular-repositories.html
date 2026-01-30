@@ -1,0 +1,26 @@
+<div class="popular-header">
+  <h6>Popular repositories</h6>
+  <a href="#">Customize your pins</a>
+</div>
+
+<div class="repo-grid">
+  <div class="repo-card" *ngFor="let repo of repos">
+
+    <div class="repo-title">
+      <a href="#">{{ repo.name }}</a>
+      <span class="badge">{{ repo.visibility }}</span>
+    </div>
+
+    <p class="description">
+      {{ repo.description }}
+    </p>
+
+    <div class="repo-footer">
+      <span class="language">
+        <span class="dot" [style.background]="repo.color"></span>
+        {{ repo.language }}
+      </span>
+    </div>
+
+  </div>
+</div>
