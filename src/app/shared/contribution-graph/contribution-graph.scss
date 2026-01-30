@@ -534,3 +534,80 @@
   color: #cf222e;
   font-weight: 500;
 }
+
+@media (max-width: 768px) {
+  .contribution-wrapper {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .contribution-card {
+    width: 100%;
+  }
+
+  .graph-row {
+    overflow-x: auto;
+  }
+
+  .heatmap {
+    min-width: 600px; 
+  }
+
+  .activity-inner {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 16px;
+  }
+
+  .activity-divider {
+    display: none;
+  }
+
+  .activity-right {
+    justify-content: flex-start;
+    margin-top: -12px;
+    margin-left: 70px;
+  }
+
+  .year-panel {
+    display: none;
+  }
+
+  .timeline-row {
+    grid-template-columns: 24px 1fr;
+    gap: 8px;
+  }
+
+  .timeline-icon {
+    width: 22px;
+    height: 22px;
+  }
+
+  .timeline-content {
+    font-size: 13px;
+  }
+
+  .timeline-title {
+    font-size: 15px;
+  }
+
+  .month-title {
+    font-size: 12px;
+  }
+
+  .activity-text {
+    font-size: 12px;
+  }
+
+  .legend {
+    font-size: 11px;
+  }
+
+  .card-header .title {
+    font-size: 15px;
+  }
+
+  .overview-info h2 {
+    font-size: 15px;
+  }
+}

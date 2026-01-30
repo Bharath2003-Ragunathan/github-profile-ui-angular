@@ -1,0 +1,21 @@
+/* Desktop / larger screens */
+@media (min-width: 768px) {
+  .container {
+    margin-left: 120px; /* keep space on left for profile column */
+  }
+
+  .profile-col {
+    margin-bottom: 0;
+  }
+}
+
+/* Mobile / small screens */
+@media (max-width: 767px) {
+  .container {
+    margin-left: 0; /* remove extra left margin */
+  }
+
+  .profile-col {
+    margin-bottom: 16px; /* space below profile for stacked layout */
+  }
+}

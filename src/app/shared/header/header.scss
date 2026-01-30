@@ -185,3 +185,60 @@
   background: #fff;
   line-height: 18px;
 }
+
+@media (max-width: 1024px) {
+
+  .gh-search .kbd {
+    display: none;
+  }
+
+  .gh-top {
+    padding: 0 12px;
+  }
+
+  .gh-left,
+  .gh-right {
+    gap: 6px;
+  }
+
+  .gh-search {
+    width: 140px;       
+    max-width: 100%;
+    min-width: 0;
+    padding: 0 6px;
+  }
+
+  @media (max-width: 768px) {
+    .gh-search {
+      width: 120px;     
+    }
+  }
+
+  .gh-search input {
+    font-size: 13px;
+    padding: 0;
+    min-width: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .gh-search svg {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+  }
+
+  @media (max-width: 768px) {
+    .gh-left .username,
+    .gh-tabs,
+    .gh-right .icon-btn:not(.bell-btn) {
+      display: none;
+    }
+  }
+
+  html,
+  body {
+    overflow-x: hidden;
+  }
+}
