@@ -1,8 +1,8 @@
 # GitHub Profile UI – Angular
 
-This project is an Angular-based implementation of a **GitHub Profile Page UI**, developed as part of the **UptimeAI Full-stack Engineer – UI Assignment**.
-
-The UI closely follows the provided design reference and mirrors the structure of the GitHub profile page with responsive behavior.
+This project is an Angular-based implementation of a GitHub Profile Page UI.
+The application replicates the structure and layout of a GitHub profile, with a
+focus on responsiveness, clean UI design, and API integration.
 
 ---
 
@@ -10,19 +10,31 @@ The UI closely follows the provided design reference and mirrors the structure o
 
 - Responsive GitHub Profile UI (Desktop, Tablet, Mobile)
 - User profile details fetched using GitHub REST API
-- GitHub Contributions **heatmap (green graph)** using live API data
+- GitHub Contributions heatmap (green graph) using live data
 - Working tabs:
   - Overview
   - Repositories
   - Projects
   - Packages
   - Stars
-- Clean UI built using **pure CSS** (no UI frameworks)
+- Built using Bootstrap for layout and styling
+- Interactive charts rendered using ECharts
+
+---
+
+## 🧰 Tech Stack
+
+- **Angular**
+- **TypeScript**
+- **Bootstrap**
+- **ECharts**
+- **GitHub REST API**
+- **HTML5 / CSS3**
 
 ---
 
 ## 🔗 API Integrations
 
 ### GitHub User Profile API
-Used to fetch profile details displayed in the left panel.
+Used to fetch user profile information displayed in the left panel.
 
