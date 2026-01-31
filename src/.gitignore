@@ -1,0 +1,6 @@
+node_modules
+dist
+.angular
+# Ignore environment files with secrets
+src/environments/environment.ts
+src/environments/environment.prod.ts
